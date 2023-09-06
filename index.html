@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>選択式チャットボット</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    /* チャットコンテナ全体のスタイル */
+    #chat-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ededed;
+      /* 黄色を基調に */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* チャットメッセージ表示エリアのスタイル */
+    #chat-output {
+      background-color: #fff;
+      /* 白色の背景 */
+      border-radius: 10px;
+      padding: 10px;
+      margin-bottom: 20px;
+      min-height: 200px;
+      /* 最小の高さを設定 */
+      overflow-y: auto;
+      /* スクロールバーを表示 (コンテンツがはみ出した場合に垂直スクロールバーを表示) */
+    }
+
+    /* ボタンのスタイル */
+    .option-button {
+      background-color: #292929;
+      /* ボタンの背景色 */
+      color: #fff;
+      /* テキストの色 */
+      border: none;
+      border-radius: 5px;
+      /* 丸い形状 */
+      padding: 10px 20px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    /* ボタンホバー時のスタイル */
+    .option-button:hover {
+      background-color: #464545;
+      /* ホバー時の背景色 */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="chat-container">
+    <div id="chat-output">
+      <!-- チャットメッセージが表示される領域 -->
+    </div>
+    <!-- ボタンをチャットメッセージ外に配置 -->
+    <div id="options" class="text-left">
+      <button class="option-button" data-next-options="option1">申し込み</button>
+      <button class="option-button" data-next-options="option2">決済・解約・キャンセル</button>
+      <button class="option-button" data-next-options="option3">革命TRIBE!のコンテンツについて</button>
+      <button class="option-button" data-next-options="option4">紹介について</button>
+      <button class="option-button" data-next-options="option5">その他</button>
+    </div>
+    <script src="script.js">
+
+    </script>
+  </div>
+</body>
+
+</html>
